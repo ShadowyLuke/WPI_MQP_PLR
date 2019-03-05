@@ -1,0 +1,10 @@
+C:\Users\Luke\source\repos\PostLectureReview\PostLectureReview\bin\Debug\netcoreapp2.0\PostLectureReview.deps.json
+C:\Users\Luke\source\repos\PostLectureReview\PostLectureReview\bin\Debug\netcoreapp2.0\PostLectureReview.runtimeconfig.json
+C:\Users\Luke\source\repos\PostLectureReview\PostLectureReview\bin\Debug\netcoreapp2.0\PostLectureReview.runtimeconfig.dev.json
+C:\Users\Luke\source\repos\PostLectureReview\PostLectureReview\bin\Debug\netcoreapp2.0\PostLectureReview.dll
+C:\Users\Luke\source\repos\PostLectureReview\PostLectureReview\bin\Debug\netcoreapp2.0\PostLectureReview.pdb
+C:\Users\Luke\source\repos\PostLectureReview\PostLectureReview\obj\Debug\netcoreapp2.0\PostLectureReview.csproj.CoreCompileInputs.cache
+C:\Users\Luke\source\repos\PostLectureReview\PostLectureReview\obj\Debug\netcoreapp2.0\PostLectureReview.AssemblyInfoInputs.cache
+C:\Users\Luke\source\repos\PostLectureReview\PostLectureReview\obj\Debug\netcoreapp2.0\PostLectureReview.AssemblyInfo.cs
+C:\Users\Luke\source\repos\PostLectureReview\PostLectureReview\obj\Debug\netcoreapp2.0\PostLectureReview.dll
+C:\Users\Luke\source\repos\PostLectureReview\PostLectureReview\obj\Debug\netcoreapp2.0\PostLectureReview.pdb

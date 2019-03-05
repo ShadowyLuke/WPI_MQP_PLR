@@ -1,0 +1,9 @@
+@model PostLectureReview.Models.Structure.Topic
+
+<div class="topic">
+    <p>
+        <label>Topic</label>
+        @Html.TextBoxFor(x => x.Title)
+        @Html.HiddenFor(x => x.DeleteTopic, new { @class = "mark-for-delete" })
+    </p>
+</div>

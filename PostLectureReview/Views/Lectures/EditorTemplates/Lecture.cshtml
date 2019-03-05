@@ -1,0 +1,29 @@
+@model PostLectureReview.Models.Structure.Lecture
+@using PostLectureReview.Models
+
+@Html.HiddenFor(x => x.ID)
+@Html.HiddenFor(x => x.Date)
+@Html.HiddenFor(x => x.URLCode)
+
+<p>
+    <label>Code</label>
+    @Html.TextBoxFor(x => x.Code)
+</p>
+
+<p>
+    <label>Title</label>
+    @Html.TextBoxFor(x => x.Title)
+</p>
+
+<div id="topics">
+    @Html.EditorFor(x => x.Topics)
+</div>
+
+<div id="questions">
+    @Html.EditorFor(x => x.Questions)
+</div>
+
+<p>
+    @Html.AddLink("Add More Questions", "#questions", ".question", "Questions", 
+                  typeof(PostLectureReview.Models.Structure.Question))
+</p>

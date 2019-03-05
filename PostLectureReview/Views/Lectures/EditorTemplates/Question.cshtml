@@ -1,0 +1,11 @@
+@model PostLectureReview.Models.Structure.Question
+@using PostLectureReview.Models
+
+<div class="question">
+    <p>
+        <label>Question</label>
+        @Html.TextBoxFor(x => x.Text)
+        @Html.HiddenFor(x => x.DeleteQuestion, new { @class = "mark-for-delete" })
+        @Html.RemoveLink("Remove", "div.question", "input.mark-for-delete")
+    </p>
+</div>

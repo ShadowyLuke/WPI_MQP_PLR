@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PostLectureReview",
+    "\\PostLectureReview\\Controllers",
+    "\\PostLectureReview\\Data",
+    "\\PostLectureReview\\Models",
+    "\\PostLectureReview\\Models\\Structure",
+    "\\PostLectureReview\\Views",
+    "\\PostLectureReview\\Views\\Lectures",
+    "\\PostLectureReview\\Views\\Lectures\\EditorTemplates",
+    "\\PostLectureReview\\wwwroot"
+  ],
+  "SelectedNode": "\\PostLectureReview\\Data\\DevelopmentContext.cs",
+  "PreviewInSolutionExplorer": false
+}

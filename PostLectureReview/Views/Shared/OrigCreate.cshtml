@@ -1,0 +1,113 @@
+﻿@model PostLectureReview.Models.Structure.Lecture
+@{
+    ViewData["Title"] = "Create";
+}
+
+<script src="~/js/CustomJs.js"></script>
+
+@*<script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript">
+        var lecture = new Model;
+
+        function addTopic() {
+            var url = "@Url.Action("AddTopic", "Lectures")";
+            var params = null;
+            $.post(url, params, update);
+        }
+
+        function update() {
+            alert("Success")
+        }
+
+    </script>*@
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @Html.EditorForModel()
+    <p>
+        <button type="submit">Create Lecture</button>
+    </p>
+}
+
+@*<h4>Lecture</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Date" class="control-label"></label>
+                    <input asp-for="Date" class="form-control" />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Code" class="control-label"></label>
+                    <input asp-for="Code" class="form-control" />
+                    <span asp-validation-for="Code" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="URLCode" class="control-label"></label>
+                    <input asp-for="URLCode" class="form-control" />
+                    <span asp-validation-for="URLCode" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                     Large class if necessary
+                    <label class="control-label">Add New Topic</label>
+                    <a href="#" onclick="addTopic()" class="btn btn-default">+</a>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Topic
+                                </th>
+                                <th>
+                                    Remove
+                                </th>
+                                <th>
+                                    Add Subtopic
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (PostLectureReview.Models.Structure.Topic item in @ViewBag.Lecture.Topics)
+                            {
+                                <tr>
+                                    <td>
+                                        <input asp-for="@item.Title" class="form-control" />
+                                        <span asp-validation-for="URLCode" class="text-danger"></span>
+                                    </td>
+                                    <td>
+                                        <button asp-action="RemoveTopic" asp-route-id="@item.ID" class="btn-default">-</button>
+                                    </td>
+                                    <td>
+                                        <button asp-action="AddSubTopic" asp-route-id="@item.ID" class="btn-default">+</button>
+                                    </td>
+                                    <td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }*@
